@@ -1,60 +1,43 @@
+/* Navbar container */
 .navbar {
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #111;
-  padding: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-  flex-wrap: wrap;
-  z-index: 100;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
+/* Netflix logo */
 .navbar__logo {
-  max-width: 150px;
-  height: auto;
-  flex: 1;
+  width: 100px; 
+  margin-right: 20px;
+  font-weight: 10px; 
 }
 
+/* Navbar links */
 .navbar__links {
   list-style: none;
+  padding: 0;
   display: flex;
-  position: relative;
-  gap: 20px;
+  gap: 20px; 
 }
 
-.navbar__link {
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-  transition: color 0.2s;
+.navbar__link a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
 }
 
-.navbar__link:hover {
-  color: #e50914;
+.navbar__link a:hover {
+  color: red;
 }
 
+/* Navbar avatar */
 .navbar__avatar {
-  max-width: 50px;
-  height: auto;
+  width: 40px; 
+  height: 40px; 
   border-radius: 50%;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.navbar__avatar:hover {
-  transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    justify-content: center;
-    padding: 10px;
-  }
-
-  .navbar__links {
-    flex-direction: column;
-    text-align: center;
-  }
 }

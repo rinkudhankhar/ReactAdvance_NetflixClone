@@ -7,7 +7,7 @@ import "./index.css";
 import Sdata from './Sdata';
 import Navbar from './Navbar/Navbar';
 import HeroImage from './HeroImage/HeroImage';
-
+import Footer from './Footer/footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function ncard(val) {
   return (
@@ -25,6 +25,7 @@ root.render(
     <div className="card-container"> {Sdata.map(ncard)}</div>
     <h2 className='heading_style'> Trending Now </h2>
     <div className="card-container">{Sdata.map(ncard)}</div>
+    <Footer/>
   </>
 );
 

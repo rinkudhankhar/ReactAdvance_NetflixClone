@@ -1,0 +1,80 @@
+/* Footer Container */
+.footer {
+    background-color: rgb(49, 40, 40);
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  /* Footer Top Container */
+  .footer__topContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer Top Row (Columns) */
+  .footer__topRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Footer Column Styles */
+  .footer__column {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+  }
+  
+  .footer__column h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer__column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer__column ul li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Footer Links (e.g., social media icons) */
+  .footer__social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer__social a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Footer Links (e.g., language selector) */
+  /* Add your styles for the language selector here */
+  
+  /* Footer Bottom */
+  .footer__bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.8rem;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .footer__topRow {
+      flex-direction: column;
+    }
+  
+    .footer__column {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  
